@@ -33,7 +33,7 @@ Test Functionality: Validate domain authentication and user access using mock ac
 
 <h2>Deployment and Configuration Steps</h2>
 <p>
-![image](https://github.com/user-attachments/assets/7b2ba4ad-5209-40a0-878c-ec03a4c2bc7d)
+(https://github.com/user-attachments/assets/7b2ba4ad-5209-40a0-878c-ec03a4c2bc7d)
 
 </p>
 <p>
