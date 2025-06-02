@@ -53,7 +53,7 @@ Test Functionality: Validate domain authentication and user access using mock ac
 <b>Step 2: Install and Configure Active Directory Domain Services</b><br />
 - On the DC-VM, open Server Manager and add the **Active Directory Domain Services** role.
 - Install the role and promote the server to a domain controller using the Active Directory Domain Services Configuration Wizard.
-- Create a new forest (e.g., `mydomain.local`) and configure DNS settings during promotion.
+- Create a new forest (e.g., `mydomain.com`) and configure DNS settings during promotion.
 - Set a Directory Services Restore Mode (DSRM) password.
 - After promotion, verify that the DNS server is running and that the domain is active using PowerShell (`Get-ADDomain`).
 </p>
