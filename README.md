@@ -32,24 +32,19 @@ Manage Users and Groups: Create and manage mock users and groups in AD to simula
 Test Functionality: Validate domain authentication and user access using mock accounts.
 
 <h2>Deployment and Configuration Steps</h2>
-<p>
-(https://github.com/user-attachments/assets/7b2ba4ad-5209-40a0-878c-ec03a4c2bc7d)
 
-</p>
 <p>
 <b>Step 1: Provision Azure Virtual Machines</b><br />
 - Log in to the Microsoft Azure portal and create two virtual machines:
   - **DC-VM (Domain Controller)**: Windows Server 2022 with at least 2 vCPUs and 4GB RAM.
-  - **Client-VM**: Windows 10 (21H2) with at least 1 vCPU and 2GB RAM.
+  - **Client-VM**: Windows 11 (21H2) with at least 1 vCPU and 2GB RAM.
 - Configure a virtual network (VNet) to ensure both VMs can communicate (e.g., use the same VNet and subnet).
 - Assign static private IP addresses to the VMs for consistent DNS configuration.
 - Enable Remote Desktop Protocol (RDP) on both VMs and note their public IP addresses for access.
 - Connect to both VMs using Remote Desktop to verify connectivity.
 </p>
 <br />
-<p>
-<img src="https://i.imgur.com/YOUR_SCREENSHOT_2.png" height="80%" width="80%" alt="Installing AD DS"/>
-</p>
+
 <p>
 <b>Step 2: Install and Configure Active Directory Domain Services</b><br />
 - On the DC-VM, open Server Manager and add the **Active Directory Domain Services** role.
@@ -59,9 +54,7 @@ Test Functionality: Validate domain authentication and user access using mock ac
 - After promotion, verify that the DNS server is running and that the domain is active using PowerShell (`Get-ADDomain`).
 </p>
 <br />
-<p>
-<img src="https://i.imgur.com/YOUR_SCREENSHOT_3.png" height="80%" width="80%" alt="Joining Client to Domain"/>
-</p>
+
 <p>
 <b>Step 3: Join Windows 10 Client to the Domain</b><br />
 - On the Client-VM, configure the network adapter to use the DC-VM’s private IP address as the DNS server.
@@ -70,9 +63,7 @@ Test Functionality: Validate domain authentication and user access using mock ac
 - Restart the Client-VM and log in with a domain account to verify successful domain joining.
 </p>
 <br />
-<p>
-<img src="https://i.imgur.com/YOUR_SCREENSHOT_4.png" height="80%" width="80%" alt="Managing AD Users"/>
-</p>
+
 <p>
 <b>Step 4: Create and Manage Users and Groups</b><br />
 - On the DC-VM, open **Active Directory Users and Computers** (ADUC).
@@ -83,9 +74,7 @@ Test Functionality: Validate domain authentication and user access using mock ac
 </p>
 <br />
 <h2>Testing and Validation</h2>
-<p>
-<img src="https://i.imgur.com/YOUR_SCREENSHOT_5.png" height="80%" width="80%" alt="Testing AD with Mock Users"/>
-</p>
+
 <p>
 <b>Step 5: Testing Active Directory Functionality</b><br />
 - Created multiple mock user accounts in Active Directory to simulate an organizational environment.
