@@ -25,7 +25,7 @@ Provision Azure Virtual Machines: Set up a Windows Server 2022 VM as the domain 
 
 Install and Configure AD DS: Promote the Windows Server to a domain controller and configure Active Directory.
 
-Join Client to Domain: Configure the Windows 10 VM to join the Active Directory domain.
+Join Client to Domain: Configure the Windows 11 VM to join the Active Directory domain.
 
 Manage Users and Groups: Create and manage mock users and groups in AD to simulate organizational roles.
 
@@ -33,7 +33,8 @@ Test Functionality: Validate domain authentication and user access using mock ac
 
 <h2>Deployment and Configuration Steps</h2>
 <p>
-<img src="https://i.imgur.com/YOUR_SCREENSHOT_1.png" height="80%" width="80%" alt="Creating Azure VMs"/>
+![image](https://github.com/user-attachments/assets/7b2ba4ad-5209-40a0-878c-ec03a4c2bc7d)
+
 </p>
 <p>
 <b>Step 1: Provision Azure Virtual Machines</b><br />
